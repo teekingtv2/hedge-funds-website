@@ -1,0 +1,344 @@
+.page-top {
+  background-image: url('../imgs/bg-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+  width: 100%;
+}
+.page-top-inner {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0b14ee;
+}
+.page-top .intro {
+  height: 100% !important;
+  display: flex;
+  position: relative;
+  padding-top: 0px;
+}
+.banner-container {
+  position: relative;
+  /* background: #1c2e9e; */
+  height: 50% !important;
+}
+.anim-img {
+  position: absolute;
+  border-style: none;
+  height: auto;
+  max-width: 70%;
+  vertical-align: middle;
+}
+.left-bouncing-triangle {
+  animation: bounce-slow-opposite 3s linear infinite;
+  left: 80px;
+  bottom: 20vh;
+}
+.right-bouncing-triangle {
+  animation: bounce-slow 3s linear infinite;
+  right: 0;
+  top: 0;
+}
+.left-bouncing-box {
+  animation: rotate 6s linear infinite;
+  left: 50px;
+  top: 5vh;
+}
+.right-bouncing-box {
+  animation: rotate 6s linear infinite;
+  right: 50px;
+  bottom: 10vh;
+}
+.banner-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-title {
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  font-size: 70px;
+  line-height: 1.2;
+  margin-bottom: 22px;
+  position: relative;
+}
+.banner-subtitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #8d76ff;
+  margin-bottom: 70px;
+}
+
+/* floating */
+.banner-floating-bg {
+  margin-top: 40px !important;
+  width: 30%;
+  margin: auto;
+  height: 30px;
+  background: #8d62f4;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 0px 60px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.page-card-container {
+  margin-top: -15px;
+  justify-content: space-between;
+  padding: 0px !important;
+  display: flex;
+  width: 30% !important;
+  position: absolute;
+}
+
+.page-title-card {
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(1, 18, 111, 0.15);
+  padding: 15px 40px;
+  transition: all 0.8s;
+  display: flex;
+}
+
+.page-card:hover {
+  transform: translateY(-10px);
+  transition: 0.7s ease-in-out;
+}
+
+.page-title {
+  font-size: 17px;
+  color: #9266fc;
+  font-weight: 600;
+}
+.page-title a {
+  color: #9266fc !important;
+}
+.page-title span {
+  color: #1c2d9c !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 800px) {
+  .page-top {
+    height: 280px;
+  }
+  .page-top .intro {
+    height: 100% !important;
+    padding-top: 0px;
+    margin-bottom: 0px !important;
+  }
+  .banner-container {
+    height: max-content;
+  }
+  .anim-img {
+    max-width: 8% !important;
+  }
+  .left-bouncing-triangle {
+    left: 10px;
+    bottom: 10vh;
+  }
+  .left-bouncing-box {
+    left: 10px;
+    top: 5px;
+  }
+  .right-bouncing-box {
+    right: 20px;
+    bottom: 10vh;
+  }
+
+  .banner-content {
+    height: max-content;
+    padding-top: 20px;
+  }
+  .banner-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .banner-subtitle {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 70px;
+  }
+
+  /* floating */
+  .banner-floating-bg {
+    margin-top: 17px !important;
+    width: 60%;
+    margin: auto;
+    height: 20px;
+    padding: 0px 60px !important;
+  }
+
+  .page-card-container {
+    margin-top: -8px;
+    padding: 0px !important;
+    width: 50% !important;
+  }
+
+  .page-title-card {
+    margin: auto;
+    padding: 8px 15px;
+  }
+
+  .page-title {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 801px) AND (max-width: 1000px) {
+  .home-top {
+    height: 75vh;
+  }
+  .intro {
+    height: 77%;
+    padding-top: 40px;
+  }
+  .anim-img {
+    max-width: 18%;
+  }
+  .banner-content {
+    height: 100%;
+    padding-top: 20px;
+  }
+  .banner-title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+  .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .banner-text {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .banner-btn {
+    margin-bottom: 40px;
+  }
+
+  /* floating */
+  .banner-floating-bg {
+    margin-top: -40px;
+    height: 60px;
+    padding: 0px 30px !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .pay-card-container {
+    margin-top: -15px;
+    padding: 0px !important;
+    display: flex;
+    width: 90%;
+  }
+  .pay-card {
+    width: 32%;
+    padding: 18px 18px 30px 18px;
+  }
+}
+
+@media (min-width: 1001px) AND (max-width: 1300px) {
+  .home-top {
+    height: 680px;
+  }
+  .intro {
+    height: 77%;
+    padding: 5px 100px 0px 100px;
+  }
+  .anim-img {
+    max-width: 30%;
+  }
+  .banner-content {
+    height: 100%;
+    padding-top: 40px;
+  }
+  .banner-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+  }
+  .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .banner-text {
+    font-size: 27px;
+  }
+
+  .banner-btn {
+    margin-bottom: 45px;
+  }
+
+  /* floating */
+  .banner-floating-bg {
+    margin-top: -45px;
+    padding: 0px 60px !important;
+  }
+
+  .pay-card-container {
+    margin-top: -15px;
+    padding: 0px !important;
+    width: 90%;
+  }
+
+  .pay-card {
+    width: 31.5%;
+  }
+}
+
+@media (min-width: 1301px) AND (max-width: 1650px) {
+  .home-top {
+    height: 920px;
+  }
+  .intro {
+    height: 75%;
+    padding: 30px 100px 0px 100px;
+  }
+  .anim-img {
+    max-width: 30%;
+  }
+  .banner-content {
+    height: 100%;
+    padding-top: 40px;
+  }
+  /* .banner-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+  } */
+  /* .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  } */
+  .banner-text {
+    font-size: 27px;
+    margin-top: 60px !important;
+  }
+
+  .banner-btn {
+    margin-bottom: 65px;
+  }
+
+  /* floating */
+  .banner-floating-bg {
+    margin-top: 30px;
+    padding: 0px 60px !important;
+  }
+
+  .pay-card-container {
+    margin-top: -20px;
+    padding: 0px !important;
+    width: 90%;
+  }
+
+  .pay-card {
+    width: 31.5%;
+  }
+}

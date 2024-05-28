@@ -1,0 +1,388 @@
+.home-top {
+  background-image: url('../imgs/bg-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 96vh;
+  width: 100%;
+  /* margin-bottom: 0px !important; */
+}
+.home-top-inner {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0b14ee;
+}
+.intro {
+  height: 83%;
+  display: flex;
+  position: relative;
+  padding-top: 50px;
+}
+.banner-container {
+  position: relative;
+}
+.anim-img {
+  position: absolute;
+  border-style: none;
+  height: auto;
+  max-width: 15% !important;
+  vertical-align: middle;
+}
+.left-bouncing-image {
+  animation: bounce-slow 3s linear infinite;
+  bottom: 20px;
+  left: 10px;
+}
+.right-bouncing-image {
+  animation: bounce-slow-opposite 3s linear infinite;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.left-bouncing-triangle {
+  animation: bounce-slow-opposite 3s linear infinite;
+  left: 80px;
+  bottom: 20vh;
+}
+.right-bouncing-triangle {
+  animation: bounce-slow 3s linear infinite;
+  right: 0;
+  top: 0;
+}
+.left-bouncing-box {
+  animation: rotate 6s linear infinite;
+  left: 50px;
+  top: 5vh;
+}
+.right-bouncing-box {
+  animation: rotate 6s linear infinite;
+  right: 50px;
+  bottom: 10vh;
+}
+.banner-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.banner-title {
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  font-size: 70px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+  position: relative;
+}
+.banner-subtitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #a783fc;
+  margin-bottom: 70px;
+}
+.banner-text {
+  font-size: 27px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.banner-btn {
+  margin-bottom: 90px;
+}
+
+/* floating */
+.banner-floating-bg {
+  margin-top: -45px;
+  width: 100%;
+  height: 60px;
+  background: #8d62f4;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 0px 60px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.pay-card-container {
+  margin-top: -15px;
+  justify-content: space-between;
+  padding: 0px !important;
+  display: flex;
+  width: 90%;
+  position: absolute;
+}
+
+.pay-card {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(1, 18, 111, 0.15);
+  padding: 20px 20px 40px 20px;
+  transition: all 0.8s;
+  display: flex;
+}
+
+.pay-card:hover {
+  transform: translateY(-10px);
+  transition: 0.7s ease-in-out;
+}
+
+.pay-card-img {
+  height: 50px;
+  margin-right: 14px;
+  min-width: 50px;
+  width: 50px;
+}
+.pay-title {
+  font-size: 20px;
+  color: #0a1768;
+  font-weight: 600;
+}
+.pay-subtitle {
+  font-size: 14px;
+  color: #7d85bd;
+}
+
+/* Mobile responsive */
+@media (max-width: 800px) {
+  .home-top {
+    height: 520px !important;
+  }
+
+  .intro {
+    height: 70%;
+    padding-top: 10px;
+  }
+  .banner-container {
+    position: relative;
+  }
+  .anim-img {
+    max-width: 15% !important;
+  }
+  .right-bouncing-image {
+    top: 40px;
+    right: 50px;
+  }
+  .right-bouncing-triangle {
+    right: 50px;
+    bottom: 60px !important;
+  }
+  .left-bouncing-triangle {
+    left: 10px;
+    bottom: 60px !important;
+  }
+  .left-bouncing-box {
+    left: 8vw;
+    top: 3vh;
+  }
+  .right-bouncing-box {
+    right: 6vw;
+    bottom: 60px;
+  }
+  .banner-content {
+    padding-top: 15px;
+  }
+  .banner-title {
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 45px;
+  }
+  .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  .banner-text {
+    position: absolute;
+    color: #020938 !important;
+    bottom: -200px;
+    font-size: 1.225rem;
+    padding: 0px 20px;
+    font-weight: 600;
+  }
+
+  .banner-btn {
+    margin-bottom: 40px;
+  }
+
+  /* floating */
+  .banner-floating-bg {
+    margin-top: 190px;
+    width: 90%;
+    height: 0px !important;
+    padding: 0px !important;
+    display: block;
+  }
+
+  .pay-card-container {
+    flex-direction: column;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0px !important;
+    display: flex;
+    position: absolute;
+  }
+
+  .pay-card {
+    width: 95%;
+    padding: 20px 20px 30px 20px;
+    transition: all 0.8s;
+    display: flex;
+  }
+}
+
+@media (min-width: 801px) AND (max-width: 1000px) {
+  .home-top {
+    height: 75vh;
+  }
+  .intro {
+    height: 77%;
+    padding-top: 40px;
+  }
+  .anim-img {
+    max-width: 18%;
+  }
+  .banner-content {
+    height: 100%;
+    padding-top: 20px;
+  }
+  .banner-title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+  .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .banner-text {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .banner-btn {
+    margin-bottom: 40px;
+  }
+
+  /* floating */
+  .banner-floating-bg {
+    margin-top: -40px;
+    height: 60px;
+    padding: 0px 30px !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .pay-card-container {
+    margin-top: -15px;
+    padding: 0px !important;
+    display: flex;
+    width: 90%;
+  }
+  .pay-card {
+    width: 32%;
+    padding: 18px 18px 30px 18px;
+  }
+}
+
+@media (min-width: 1001px) AND (max-width: 1300px) {
+  .home-top {
+    height: 680px;
+  }
+  .intro {
+    height: 77%;
+    padding: 5px 100px 0px 100px;
+  }
+  .anim-img {
+    max-width: 30%;
+  }
+  .banner-content {
+    height: 100%;
+    padding-top: 40px;
+  }
+  .banner-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+  }
+  .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .banner-text {
+    font-size: 27px;
+  }
+
+  .banner-btn {
+    margin-bottom: 45px;
+  }
+
+  /* floating */
+  .banner-floating-bg {
+    margin-top: -45px;
+    padding: 0px 60px !important;
+  }
+
+  .pay-card-container {
+    margin-top: -15px;
+    padding: 0px !important;
+    width: 90%;
+  }
+
+  .pay-card {
+    width: 31.5%;
+  }
+}
+
+@media (min-width: 1301px) AND (max-width: 1650px) {
+  .home-top {
+    height: 920px;
+  }
+  .intro {
+    height: 75%;
+    padding: 30px 100px 0px 100px;
+  }
+  .anim-img {
+    max-width: 30%;
+  }
+  .banner-content {
+    height: 100%;
+    padding-top: 40px;
+  }
+  /* .banner-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+  } */
+  /* .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  } */
+  .banner-text {
+    font-size: 27px;
+    margin-top: 60px !important;
+  }
+
+  .banner-btn {
+    margin-bottom: 65px;
+  }
+
+  /* floating */
+  .banner-floating-bg {
+    margin-top: 30px;
+    padding: 0px 60px !important;
+  }
+
+  .pay-card-container {
+    margin-top: -20px;
+    padding: 0px !important;
+    width: 90%;
+  }
+
+  .pay-card {
+    width: 31.5%;
+  }
+}

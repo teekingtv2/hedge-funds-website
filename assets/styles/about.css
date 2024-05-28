@@ -1,0 +1,99 @@
+.about {
+  background: #f0eaff;
+  margin-top: 0px !important;
+  padding: 70px 0px;
+}
+
+.company {
+  display: flex;
+  gap: 50px;
+  padding: 30px 0px;
+}
+
+.about .box {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  box-shadow: 2px 2px 10px #4d3a7959;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.box .title {
+  font-size: 40px;
+  text-align: start;
+}
+
+.box p {
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 1.9rem;
+  color: #7e87bf;
+  margin: auto;
+  padding: auto;
+}
+
+@media (max-width: 800px) {
+  .about {
+    margin-top: 0px !important;
+    padding: 70px 0px;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 20px;
+    max-width: 10px auto;
+  }
+
+  .company .box {
+    padding: 15px;
+  }
+  .company .box p {
+    font-size: 14px !important;
+    line-height: 1.5rem;
+  }
+
+  .box {
+    margin: 20px 0px;
+  }
+
+  .box .title {
+    font-size: 24px;
+    text-align: start;
+  }
+}
+
+@media (min-width: 801px) AND (max-width: 1000px) {
+  .about {
+    margin-top: 0px !important;
+    padding: 70px 0px;
+  }
+
+  .company {
+    display: flex;
+    gap: 20px;
+    padding: 0px 20px;
+    max-width: 10px auto;
+  }
+
+  .company .box {
+    padding: 15px;
+  }
+  .company .box p {
+    font-size: 14px !important;
+    line-height: 1.5rem;
+  }
+
+  .box {
+    margin: 20px 0px;
+  }
+
+  .box .title {
+    font-size: 24px;
+    text-align: start;
+  }
+}

@@ -1,0 +1,135 @@
+footer {
+  background-image: url('../imgs/footer-bg.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background-blend-mode: luminosity;
+  background-color: #221646e5;
+  z-index: 1;
+  padding: 80px 0px 0px;
+  width: 100%;
+}
+
+.footer-upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  color: #bfbcca;
+  padding-bottom: 40px;
+}
+
+.flogo {
+  height: auto;
+  width: 100px !important;
+}
+
+.footer-upper .box {
+  width: 24%;
+}
+.footer-upper h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.footer-upper p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.footer-upper p.address {
+  font-weight: 600;
+  color: #fff;
+  font-size: 17px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.footer-upper p.address2 {
+  color: #bfbcca;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+}
+.map {
+  margin-top: 20px;
+  height: auto;
+  width: 90%;
+}
+
+.footer-upper ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-upper li {
+  margin: 12px 0px;
+  list-style-type: none;
+}
+.footer-upper li a {
+  color: #bfbcca;
+  font-weight: 600;
+  font-size: 14px;
+}
+.footer-upper li a:hover {
+  color: #fff;
+}
+.footer-bottom {
+  width: 100%;
+  padding: 20px;
+  background: #9467fe;
+  text-align: center;
+  color: #fff;
+}
+.footer-bottom a {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding: 80px 0px 0px;
+    width: 100%;
+  }
+
+  .footer-upper {
+    flex-direction: column;
+    gap: 30px;
+    width: 85%;
+  }
+
+  .footer-upper .box {
+    width: 100%;
+  }
+
+  .footer-upper h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .footer-upper li a {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .footer-upper p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  .footer-upper p.address {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .footer-upper p.address2 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .map {
+    width: 80%;
+  }
+}

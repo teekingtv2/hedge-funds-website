@@ -1,0 +1,35 @@
+.logo {
+  height: 130px !important;
+  width: 150px !important;
+}
+
+.navbar-nav {
+  z-index: 10 !important;
+  align-items: center;
+}
+.nav-title {
+  color: #fff !important;
+  font-weight: 500;
+}
+.nav-title:hover {
+  color: #8d62f4 !important;
+}
+.nav-title .primary-btn {
+  padding: 10px 100px !important;
+}
+
+.active {
+  color: #8d62f4 !important;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    height: auto !important;
+    width: 70px !important;
+  }
+  .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 30px 10px;
+    align-items: flex-start;
+  }
+}

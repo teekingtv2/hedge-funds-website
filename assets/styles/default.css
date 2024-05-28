@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  /* font-family: 'Poppins, sans-serif'; */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+  background: #000;
+}
+
+section {
+  margin: 0px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1.title {
+  color: #362465;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+h2.title {
+  color: #362465;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+p.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #7e87bf;
+  max-width: 585px;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, #9568ff, #9568ff 99.31%);
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  padding: 18px 50px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px rgba(148, 103, 254, 0.2);
+}
+.register-btn {
+  background: linear-gradient(90deg, #9568ff, #9568ff 99.31%);
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  padding: 13px 500px;
+  width: 120px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px rgba(148, 103, 254, 0.2);
+  margin-left: 70px !important;
+}
+.register-btn:hover {
+  color: #fff !important;
+  transform: translateY(-7px);
+  transition: 0.7s ease-in-out;
+}
+
+.primary-btn:hover {
+  color: #fff;
+  transform: translateY(-7px);
+  transition: 0.7s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .primary-btn {
+    padding: 14.5px 33px;
+  }
+  h1.title {
+    font-size: 1.65rem;
+  }
+  p.subtitle {
+    font-size: 15px;
+  }
+  .register-btn {
+    padding: 8px 500px;
+    width: 120px;
+    margin-left: 17px !important;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 801px) AND (max-width: 1000px) {
+  .primary-btn {
+    padding: 14.5px 33px;
+  }
+  h1.title {
+    font-size: 36px;
+  }
+  p.subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1001px) AND (max-width: 1300px) {
+  .primary-btn {
+    padding: 16px 40px;
+  }
+  h1.title {
+    font-size: 42px;
+  }
+  p.subtitle {
+    font-size: 18px;
+  }
+}

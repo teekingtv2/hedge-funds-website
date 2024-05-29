@@ -13,11 +13,11 @@ showMoreHowToText.addEventListener('click', function () {
 
   if (fullHowToText) {
     howToBuyText.innerText =
-      'Before placing your investment with us you’ll need to have these two things ready. Firstly you’ll need to purchase some USDT. This is most commonly done through a crypto exchange such as, Binance or coin base. Secondly, you’ll need to download our partner wallet EXODUS to receive your payout from our system.';
+      "Before placing your investment with us youlll need to have these two things ready. Firstly you'll need to purchase some USDT. This is most commonly done through a crypto exchange such as, Binance or coinbase, cash app , changelly Secondly, you'll need to download our partner wallet TRUST for spot trading and receive payout. Contact support for guidance";
     showMoreHowToText.innerText = 'Read less';
   } else {
     howToBuyText.innerText =
-      'Before placing your investment with us you’ll need to have these two things ready. Firstly you’ll need to purchase some USDT...';
+      "Before placing your investment with us youlll need to have these two things ready. Firstly you'll need to purchase some...";
     showMoreHowToText.innerText = 'Read more';
   }
 });

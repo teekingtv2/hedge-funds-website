@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 850px;
+  height: 96vh;
   width: 100%;
   /* margin-bottom: 0px !important; */
 }
@@ -94,7 +94,7 @@
 }
 
 .banner-btn {
-  margin-bottom: 20px;
+  margin-bottom: 90px;
 }
 
 /* floating */
@@ -153,10 +153,7 @@
 /* Mobile responsive */
 @media (max-width: 800px) {
   .home-top {
-    height: 600px !important;
-  }
-  .tradingview-widget-container {
-    margin-top: 35px;
+    height: 520px !important;
   }
 
   .intro {
@@ -167,7 +164,7 @@
     position: relative;
   }
   .anim-img {
-    max-width: 13% !important;
+    max-width: 15% !important;
   }
   .right-bouncing-image {
     top: 40px;
@@ -251,7 +248,7 @@
     padding-top: 40px;
   }
   .anim-img {
-    max-width: 15% !important;
+    max-width: 18%;
   }
   .banner-content {
     height: 100%;
@@ -259,11 +256,11 @@
   }
   .banner-title {
     font-size: 36px;
-    margin-bottom: 72px;
+    margin-bottom: 32px;
   }
   .banner-subtitle {
     font-size: 18px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
   }
   .banner-text {
     font-size: 24px;
@@ -311,12 +308,12 @@
   }
   .banner-title {
     font-size: 48px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     padding: 0px 50px;
   }
   .banner-subtitle {
     font-size: 18px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   .banner-text {
     font-size: 27px;
@@ -357,6 +354,19 @@
   .banner-content {
     height: 100%;
     padding-top: 40px;
+  }
+  /* .banner-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+  } */
+  /* .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  } */
+  .banner-text {
+    font-size: 27px;
+    margin-top: 60px !important;
   }
 
   .banner-btn {
